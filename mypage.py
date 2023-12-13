@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import json
 import requests
-from streamlit_lottie import st_lottie
+ 
 
 def load_lottie_file(filepath: str):
     with open(filepath, "r") as f:
@@ -48,7 +48,7 @@ def main():
             st.write(" Thank you once again for being a part of this community. Happy coding! [Click here](https://www.w3schools.com/python/)")
 
         with right_column:
-            st_lottie(
+           streamlit_lottie(
         lottie_coding,
         speed=1,
         reverse=False,
